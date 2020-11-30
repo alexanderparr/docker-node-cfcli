@@ -3,7 +3,7 @@ LABEL maintainer="p36 (copy of geert-janklaps/docker-node-cfcli)"
 LABEL version="1.0"
 
 # Install required packages for next installs
-RUN apt-get update && apt-get install -y wget gnupg2 curl chromium-browser build-essential maven
+RUN apt-get update && apt-get install -y wget gnupg2 curl chromium-browser build-essential maven default-jdk
 
 # Set chrome environment variable for karma tests
 ENV CHROME_BIN /usr/bin/chromium-browser
